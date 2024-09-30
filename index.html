@@ -6,9 +6,8 @@
     <title>Unity WebGL Player | SmallRunner</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <div id="unity-container" style="position: absolute; width: 100%; height: 100%; left: 0%; top: 0%;">
-    <canvas id="unity-canvas" style="position: absolute; width: 100%; height: 100%"></canvas>
-    <script src="Build/1.loader.js"></script>
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/2.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/1.data",
-        frameworkUrl: "Build/1.framework.js",
-        codeUrl: "Build/1.wasm",
+        dataUrl: "Build/2.data",
+        frameworkUrl: "Build/2.framework.js",
+        codeUrl: "Build/2.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "SmallRunner",
